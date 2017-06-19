@@ -5,26 +5,36 @@ body {
     min-height: 100%;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     justify-content: space-around;
-    align-content: space-around;
+    align-content: stretch;
     font-family: 'Roboto', sans-serif;
 }
-.header{
+#header{
     display: flex;
     flex-flow: row wrap;
-    height: 100px;
-    width: 100%;
-    background-color: blue;
-    justify-content: space-around;
-    align-content: space-around;
-    align-self: stretch;
+    text-align: center;
     align-items: center;
+    width: 100%;
+    background-color: #E8E8E8;
     }
 .logo {
-    align-self: flex-start;
+    flex-grow: 4;
+    display: flex;
+    justify-content: flex-start;
     height: 100px;
-    width: auto;
+    width: 210px;
+    padding-left: 80px;
+}
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.phone {
+    display: inline-flex;
+    text-align: center;
+    margin-right: 100px;
 }
 .logo img {
     height: 100%;
@@ -32,7 +42,10 @@ body {
 }
 .phoneIconCima {
     height: 30px;
-    width: auto;
+    width: 22px;
+}
+.numero {
+    width: 100px;
 }
 .phoneIconCima img {
     height: 100%;
@@ -40,7 +53,8 @@ body {
 }
 .fbIconCima {
     height: 30px;
-    width: auto;
+    width: 30px;
+    margin-right: 20px;
 }
 .fbIconCima img {
     height: 100%;
@@ -48,9 +62,52 @@ body {
 }
 .instaIconCima {
     height: 30px;
-    width: auto;
+    width: 30px;
+    margin-right: 30px;
 }
 .instaIconCima img {
     height: 100%;
     width: auto;
+}
+
+#cima {
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-image: url("back1.png");
+}
+.texto-instigante {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.form-box {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 10px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.form-box input {
+    margin-bottom: 10px;
+}
+#email {
+    width: 356px;
+}
+#comentarios {
+    width: 356px;
+    margin-bottom: 10px;
+}
+.tiulo-texto {
+    align-self: flex-start;
 }
