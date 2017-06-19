@@ -2,10 +2,62 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Rodrigo Falcão</title>
+		<title>Academia Olimpo</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="script" href="assets/js/script.js"/>
 	</head>
 	<body>
-		
+		<section id="header"><!-- Cabeçalho da página -->
+			<div class="logo">
+				<img src="assets\img\Logo.png">
+			</div>
+			<div class="phoneIconCima">
+				<img src="assets\img\phone.png">
+			</div>
+			<div class="numero">
+				(81)3265-1235
+			</div>
+			<div class="fbIconCima">
+				<img src="assets\img\fb.png">
+			</div>
+			<div class="instaIconCima">
+				<img src="assets\img\insta.png">
+			</div>	
+		</section>
+		<section id="cima"><!-- parte abaixo do cabecalho e antes do primeiro scroll, em suma, a do formulario -->
+			<div class="texto-instigante">
+				<p class="titulo-texto">
+					Saímos da curva
+				</p>
+				<p class="texto-texto"><!-- Texto (titulo e paragrafo) instigante -->
+					Esqueça a tradicional academia que só se importa
+					com   aparências.  Na   Olimpo   você   conta   com 
+					profissionais  que  entendem  o  conceito  de   vida 
+					saudável e, claro, o garantem para a sua
+				</p>
+			</div>
+			<div class="form-box"><!-- Caixa que contem o formulario -->
+				<p class="form-text1">
+					Garanta agora o seu
+				</p>
+				<p class="form-text2">
+					PASSE LIVRE
+				</p>
+				<p class="form-text3">
+					Complete os campos abaixo e ganhe 3 dias de treino
+					totalmente gratuitos na Olimpo!
+				</p>
+				<form action="/admin/" method="post">
+					<input id="nome" type="text" name="nome" placeholder="Nome" required /> 
+					<input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required />
+					<input id="cargo" type="text" name="cargo" placeholder="Cargo" required />
+					<input id="estado" type="text" name="estado" placeholder="Estado (Ex.: PE, SP)" required />
+					<input id="email" type="email" name="email" placeholder="E-mail" required />
+					<textarea id="comentarios" type="text" name="comentarios" placeholder="Sugestões e comentários (opcional)"></textarea>
+					<!-- eh uma <textarea> ao invés de input, pois é mais "amigo do usuario" -->
+					<input type="submit" value="RECEBER PASSE LIVRE">
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
