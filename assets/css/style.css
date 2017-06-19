@@ -1,0 +1,56 @@
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    justify-content: space-around;
+    align-content: space-around;
+    align-self: stretch;
+    align-items: center;
+    }
+.logo {
+    align-self: flex-start;
+    height: 100px;
+    width: auto;
+}
+.logo img {
+    height: 100%;
+    width: auto;
+}
+.phoneIconCima {
+    height: 30px;
+    width: auto;
+}
+.phoneIconCima img {
+    height: 100%;
+    width: auto;
+}
+.fbIconCima {
+    height: 30px;
+    width: auto;
+}
+.fbIconCima img {
+    height: 100%;
+    width: auto;
+}
+.instaIconCima {
+    height: 30px;
+    width: auto;
+}
+.instaIconCima img {
+    height: 100%;
+    width: auto;
+}
