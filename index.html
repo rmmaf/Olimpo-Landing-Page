@@ -1,102 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Academia Olimpo</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="script" href="assets/js/script.js"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	</head>
-	<body>
-		<section id="header"><!-- Cabeçalho da página -->
-			<div class="logo">
-				<img src="assets\img\Logo.png">
-			</div>
-			<div class="menu">
-				<div class="phone">
-					<div class="phoneIconCima">
-						<img src="assets\img\phone.png">
-					</div>
-					<div class="numero">
-						(81)3265-1235
-					</div>
-				</div>
-				<div class="fbIconCima">
-					<img src="assets\img\fb.png">
-				</div>
-				<div class="instaIconCima">
-					<img src="assets\img\insta.png">
-				</div>
-			</div>
-		</section>
-		<section id="cima"><!-- parte abaixo do cabecalho e antes do primeiro scroll, em suma, a do formulario -->
-			<div class="texto-instigante">
-				<p class="titulo-texto">
-					Saímos da curva
-				</p>
-				<p class="texto-texto"><!-- Texto (titulo e paragrafo) instigante -->
-					Esqueça a tradicional academia que só se importa<br>
-					com   aparências.  Na   Olimpo   você   conta   com <br>
-					profissionais  que  entendem  o  conceito  de   vida <br>
-					saudável e, claro, o garantem para a sua
-				</p>
-			</div>
-			<div class="form-box"><!-- Caixa que contem o formulario -->
-				<p class="form-text1">
-					Garanta agora o seu
-				</p>
-				<p class="form-text2">
-					PASSE LIVRE
-				</p>
-				<p class="form-text3">
-					Complete os campos abaixo e ganhe 3 dias de treino
-					totalmente gratuitos na Olimpo!
-				</p>
-				<form action="/admin/" method="post">
-					<input id="nome" type="text" name="nome" placeholder="Nome" required /> 
-					<input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required />
-					<input id="cargo" type="text" name="cargo" placeholder="Cargo" required />
-					<input id="estado" type="text" name="estado" placeholder="Estado (Ex.: PE, SP)" required />
-					<input id="email" type="email" name="email" placeholder="E-mail" required />
-					<textarea id="comentarios" type="text" name="comentarios" placeholder="Sugestões e comentários (opcional)"></textarea>
-					<!-- eh uma <textarea> ao invés de input, pois é mais "amigo do usuario" -->
-					<input type="submit" value="RECEBER PASSE LIVRE">
-				</form>
-			</div>
-		</section>
 
-		<section class="footer">
-			<div class="footer-fb">
-				<img src="assets\img\fbranco.png">
+<head>
+	<meta charset="UTF-8">
+	<title>Academia Olimpo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="script" href="assets/js/script.js" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<nav id="headerTop" class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img alt="Brand" src="assets\img\Logo.png">
 			</div>
-			<div class="footer-insta">
+			<ul id="navLista" class="nav navbar-nav navbar-right">
+				<li class="phoneIcon">
+					<img src="assets\img\phone.png"> (81)2345678
+				</li>
+				<li class="instaIcon">
+					<img src="assets\img\insta.png">
+				</li>
+				<li class="fbIcon">
+					<img src="assets\img\fb.png">
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section id="cima">
+		<!-- parte abaixo do cabecalho e antes do primeiro scroll, em suma, a do formulario -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="info-box">
+						<p class="titulo-texto">
+							Saímos da curva
+						</p>
+						<p class="texto-texto">
+							<!-- Texto (titulo e paragrafo) instigante -->
+							Esqueça a tradicional academia que só se importa com aparências. Na Olimpo você conta com profissionais que entendem o conceito de vida saudável e, claro, o garantem para a sua
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="form-box">
+						<!-- Caixa que contem o formulario -->
+						<p class="form-text1">
+							Garanta agora o seu
+						</p>
+						<p class="form-text2">
+							PASSE LIVRE
+						</p>
+						<p class="form-text3">
+							Complete os campos abaixo e ganhe 3 dias de treino totalmente gratuitos na Olimpo!
+						</p>
+						<form action="/admin/" method="post">
+							<input id="nome" type="text" name="nome" placeholder="Nome" required />
+							<input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required />
+							<input id="cargo" type="text" name="cargo" placeholder="Cargo" required />
+							<input id="estado" type="text" name="estado" placeholder="Estado (Ex.: PE, SP)" required />
+							<input id="email" type="email" name="email" placeholder="E-mail" required />
+							<textarea id="comentarios" type="text" name="comentarios" placeholder="Sugestões e comentários (opcional)"></textarea>
+							<!-- eh uma <textarea> ao invés de input, pois é mais "amigo do usuario" -->
+							<input id="botaoSubmit" type="submit" value="RECEBER PASSE LIVRE">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-social">
+				<img src="assets\img\fbranco.png">
 				<img src="assets\img\instabranco.png">
 			</div>
 			<div class="footer-phone">
 				<img src="assets\img\phonebranco.png">
 			</div>
-			<div class="footer-number">
+			<p class="footer-number">
 				(81)3265-1235
-			</div>
+			</p>
 			<div class="footer-mail">
 				<img src="assets\img\email.png">
 			</div>
-			<div class="footer-mailtext">
+			<p class="footer-mailtext">
 				academiaolimpo@email.com
-			</div>
+			</p>
 			<div class="footer-map">
 				<img src="assets\img\mapa.png">
 			</div>
-			<div class="footer-local">
+			<p class="footer-local">
 				Rua Dos Bobos, Nº 0, Boa Viagem, Recife, Pernambuco, Brasil CEP:12345-678
-			</div>
+			</p>
 			<div class="footer-logo">
 				<img src="assets\img\logobranca.png">
-			</div> 
-		</section>
-	</body>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
