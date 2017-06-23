@@ -1,94 +1,317 @@
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
 }
+
+
+/*Rodrigo:*/
+
+
+#formularioBaixo {
+    display: none;
+}
+
 #headerTop {
     margin-bottom: 0;
 }
-.navbar-header img{
+
+.navbar-header img {
     height: 100px;
 }
-.phoneIcon img {
+#navLista img {
     height: 30px;
 }
-.instaIcon img {
-    height: 30px;
-}
-.fbIcon img {
-    height: 30px;
-}
+
 #cima {
+    height: 89vh;
     background-image: url(back1.png);
     background-size: cover;
+    padding-left: 5%;
 }
+
 #navLista {
     margin-top: 35px;
     margin-right: 50px;
 }
+
 #navLista img {
     margin-left: 20px;
 }
 
 .form-box {
-    width:450px;
-    margin-top:65px;
-    margin-bottom: 65px;
-    background-color: rgba(96,96,96,0.7);
-	padding: 30px;
-	border-radius: 2rem;
+    margin-top: 18vh;
+    margin-right: 5vw;
+    background-color: rgba(96, 96, 96, 0.7);
+    padding: 30px;
+    border-radius: 2rem;
 }
+
 input {
-    margin:5px;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 2rem;
+    background-color: #4D4D4D;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
 }
+
+::-webkit-input-placeholder {
+    color: #bfbfbf;
+}
+
+input:-moz-placeholder {
+    color: #bfbfbf;
+}
+
+textarea:-moz-placeholder {
+    color: #bfbfbf;
+}
+
+#nome,
+#cargo,
+#estado,
+#sobrenome {
+    width: 48%;
+    padding-left: 10px;
+}
+
+#nome,
+#cargo {
+    margin-right: 7px;
+}
+
+#sobrenome,
+#estadoc {
+    margin-right: 0;
+}
+
 #email {
-    width: 365px;
+    width: 100%;
+    padding-left: 10px;
 }
+
 textarea {
     margin: 5px;
-    width: 365px;
+    margin-left: 0;
+    width: 100%;
+    border-radius: 2rem;
+    padding-left: 10px;
+    background-color: #4D4D4D;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
 }
+
 #botaoSubmit {
-    width: 365px;
+    width: 100%;
     height: 50px;
+    background-color: #FFA200;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    border-color: black;
 }
+
 .info-box {
-    margin-top: 160px;
+    margin-top: 25vh;
 }
+
+#cimaTexto {
+    margin: 0;
+}
+
 .texto-texto {
-    padding-left: 80px;
+    padding-left: 50px;
     font-size: 25px;
     color: white;
     margin-bottom: 0;
+    text-align: justify;
 }
+
 .titulo-texto {
-    padding-left: 20px;
     font-size: 60px;
     color: #FFA200;
     margin-bottom: 0px;
+    font-weight: bold;
 }
+
 .form-text1 {
     color: white;
     font-size: 30px;
     margin-bottom: 0;
     margin-top: 0;
 }
+
 .form-text2 {
     color: white;
     font-size: 30px;
     font-style: italic;
     margin-bottom: 0;
     margin-top: 0;
+    font-weight: bold;
 }
 
 .form-text3 {
     color: white;
     font-size: 20px;
 }
+
+#baixo {
+    background-color: #313D4D;
+}
+
+#baixo-content img {
+    height: 120px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+#baixo {
+    margin: 0;
+}
+
+.titulo-baixo {
+    font-size: 40px;
+    color: #FFA200;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#stress,
+#mental {
+    margin-right: 0;
+}
+
+#digestao,
+#respiracao {}
+
+#respiracao {
+    margin-bottom: 0;
+}
+
 footer {
     background-color: #333333;
+    color: white;
+    text-align: center;
 }
+
 footer img {
     height: 30px;
 }
-footer p {
-    color: white;
+
+#logoFooterson {
+    margin-top: 10px;
+    height: 100px;
+}
+
+footer {
+    padding-left: 10%;
+}
+
+#emailBranco {
+    margin-left: 50px;
+}
+
+#instaBranco,
+#fbBranco {
+    margin: 10px;
+}
+
+#mapaBranco {
+    margin-bottom: 10px;
+}
+
+
+/*Roger:*/
+
+@media screen and (max-width: 768px) {
+    /*mobile */
+    .navbar-header img {
+        height: 60px;
+    }
+    #navLista {
+        margin-top: 10px;
+    }
+    #navLista img {
+        height: 25px;
+        margin-right: 10px;
+    }
+    .info-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .titulo-texto {
+        font-size: 35px;
+    }
+    .texto-texto {
+        font-size: 15px;
+        margin-right: 0;
+    }
+    #cima {
+        height: auto;
+    }
+    #cimaForm {
+        display: none;
+    }
+    #formularioBaixo {
+        display: block;
+    }
+    .form-box {
+        margin: 0;
+        background-color: #4d4d4d;
+        padding: 30px;
+        border-radius: 0rem;
+    }
+    .form-box input {
+        margin: 0;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .form-text1,
+    .form-text2 {
+        font-size: 20px;
+    }
+    .form-text3 {
+        font-size: 15px;
+    }
+    #botaoSubmit {
+        font-size: 15px;
+    }
+    footer {
+        font-size: 10px;
+        padding: 0;
+    }
+    footer img {
+        height: 15px;
+    }
+    #instaBranco,
+    #fbBranco {
+        height: 25px;
+    }
+    #logoFooterson {
+        display: none;
+    }
+    #emailBranco {
+        margin-left: 30px;
+    }
+}
+
+@media all and (min-width: 1280px) and (max-width: 1366px) {
+    .form-box {
+        margin-top: 14vh;
+        margin-right: 10px;
+        background-color: rgba(96, 96, 96, 0.7);
+        padding: 30px;
+        border-radius: 2rem;
+    }
 }

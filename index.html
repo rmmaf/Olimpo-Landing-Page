@@ -3,41 +3,59 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Academia Olimpo</title>
+	<title>Olimpo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="script" href="assets/js/script.js" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+	<!-- favicon -->
+
 </head>
 
 <body>
 	<nav id="headerTop" class="navbar navbar-default">
 		<div class="container-fluid">
+
+
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 				<img alt="Brand" src="assets\img\Logo.png">
 			</div>
-			<ul id="navLista" class="nav navbar-nav navbar-right">
-				<li class="phoneIcon">
-					<img src="assets\img\phone.png"> (81)2345678
-				</li>
-				<li class="instaIcon">
-					<img src="assets\img\insta.png">
-				</li>
-				<li class="fbIcon">
-					<img src="assets\img\fb.png">
-				</li>
-			</ul>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div id="navLista" class="nav navbar-nav navbar-right">
+						<img src="assets\img\insta.png">
+						<img src="assets\img\fb.png">
+						<img src="assets\img\phone.png"> (81)2345678
+				</div>
+			</div>
+			<!-- /.navbar-collapse -->
+
+
+
+
+
+
+			<!--<div class="navbar-header">
+				
+			</div>
+			-->
 		</div>
 	</nav>
 	<section id="cima">
 		<!-- parte abaixo do cabecalho e antes do primeiro scroll, em suma, a do formulario -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-7">
+				<div id="cimaTexto" class="col-sm-7">
 					<div class="info-box">
 						<p class="titulo-texto">
 							Saímos da curva
@@ -48,7 +66,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-sm-5">
+				<div id="cimaForm" class="col-sm-5">
 					<div class="form-box">
 						<!-- Caixa que contem o formulario -->
 						<p class="form-text1">
@@ -75,36 +93,73 @@
 			</div>
 		</div>
 	</section>
+	<section id="formularioBaixo">
+		<div class="form-box">
+			<!-- Caixa que contem o formulario -->
+			<p class="form-text1">
+				Garanta agora o seu
+			</p>
+			<p class="form-text2">
+				PASSE LIVRE
+			</p>
+			<p class="form-text3">
+				Complete os campos abaixo e ganhe 3 dias de treino totalmente gratuitos na Olimpo!
+			</p>
+			<form action="/admin/" method="post">
+				<input id="nome" type="text" name="nome" placeholder="Nome" required />
+				<input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome" required />
+				<input id="cargo" type="text" name="cargo" placeholder="Cargo" required />
+				<input id="estado" type="text" name="estado" placeholder="Estado (Ex.: PE, SP)" required />
+				<input id="email" type="email" name="email" placeholder="E-mail" required />
+				<textarea id="comentarios" type="text" name="comentarios" placeholder="Sugestões e comentários (opcional)"></textarea>
+				<!-- eh uma <textarea> ao invés de input, pois é mais "amigo do usuario" -->
+				<input id="botaoSubmit" type="submit" value="RECEBER PASSE LIVRE">
+			</form>
+		</div>
+	</section>
+
+
+
+
+
+	<section id="baixo">
+		<div class="row">
+			<div id="baixo-content" class="col-sm-8 col-centered">
+				<p class="titulo-baixo">Benefícios da Atividade Física</p>
+				<img id="stress" src="assets\img\stress.png">
+				<img id="digestao" src="assets\img\digestao.png">
+				<img id="mental" src="assets\img\mental.png">
+				<img id="respiracao" src="assets\img\respiracao.png">
+			</div>
+		</div>
+	</section>
+
+
+
+
+
 
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-social">
-				<img src="assets\img\fbranco.png">
-				<img src="assets\img\instabranco.png">
-			</div>
-			<div class="footer-phone">
-				<img src="assets\img\phonebranco.png">
-			</div>
-			<p class="footer-number">
-				(81)3265-1235
-			</p>
-			<div class="footer-mail">
-				<img src="assets\img\email.png">
-			</div>
-			<p class="footer-mailtext">
-				academiaolimpo@email.com
-			</p>
-			<div class="footer-map">
-				<img src="assets\img\mapa.png">
-			</div>
-			<p class="footer-local">
-				Rua Dos Bobos, Nº 0, Boa Viagem, Recife, Pernambuco, Brasil CEP:12345-678
-			</p>
-			<div class="footer-logo">
-				<img src="assets\img\logobranca.png">
+				<img id="fbBranco" src="assets\img\fbranco.png">
+				<img id="instaBranco" src="assets\img\instabranco.png">
+				<img id="logoFooterson" class="pull-right" src="assets\img\logobranca.png">
+				<br>
+				<img id="phoneBRanco" src="assets\img\phonebranco.png"> (81)3265-1235
+				<img id="emailBranco" src="assets\img\email.png"> academiaolimpo@email.com
+				<br>
+				<img id="mapaBranco" src="assets\img\mapa.png"> Rua Dos Bobos, Nº 0, Boa Viagem, Recife, Pernambuco, Brasil CEP:12345-678
 			</div>
 		</div>
 	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="script" href="assets/js/script.js" />
 </body>
 
 </html>
